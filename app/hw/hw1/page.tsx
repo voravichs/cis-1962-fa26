@@ -64,7 +64,7 @@ export default function DataAnalysis() {
         <section id="introduction" className="scroll-mt-48 space-y-8 mb-8">
           <h2 className="text-2xl sm:text-3xl md:text-4xl text-indigo-600 font-bold mb-2 flex gap-2"> <FaPlug /> Introduction &amp; Installation</h2>
           <a
-            href={schedule[0].homework?.starter}
+            // href={schedule[0].homework?.starter}
             download
             aria-label="Download starter files as zip"
             className="flex justify-center items-center gap-1 px-4 py-2 bg-red-600 hover:bg-red-700 active:bg-red-800 text-white rounded-lg font-semibold shadow transition focus:outline-none focus:ring-2 focus:ring-red-300 w-1/2 my-4 cursor-pointer"
