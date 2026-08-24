@@ -70,8 +70,8 @@ export default function Syllabus() {
                     
                     <div className="ml-4 space-y-4">
                         <h3 className='text-xl font-bold text-indigo-600'>Attendance</h3>
-                        <p className='ml-4'>Attendance will not be mandatory, but lectures will not be recorded, so it is in your best interest to attend as many classes as possible. Attendance will be taken through participation in class quiz activites and coding activities on Ed Lessons. If we notice you are missing a majority of lectures in the semester (7+), <span className="red-bold">these points will be deducted from your final grade</span>.</p>
-                        <p className="ml-4">If you do need to miss a lecture or have extenuating circumstances, please feel free to contact the course staff. Lecture slides and code will be provided after each lecture on both the course website and Ed Lessons.</p>
+                        <p className='ml-4'>In-person attendance will not be mandatory, but lectures will not be recorded, so it is in your best interest to attend as many classes as possible. Attendance will be taken through participation in class quiz activites and coding activities on Ed Lessons. You may do these activities asynchonously, as we will only count them at the end of the semester. If we notice you are missing a majority of lecture activities in the semester (7+), <span className="red-bold">these attendance points will be deducted from your final grade</span>.</p>
+                        <p className="ml-4">If you do need to miss lectures or have extenuating circumstances, please feel free to contact the course staff. Lecture slides and code will be provided after each lecture on both the course website and Ed Lessons.</p>
                     </div>
                     <div className="ml-4 space-y-4">
                         <h3 className='text-xl font-bold text-indigo-600'>Homework</h3>
