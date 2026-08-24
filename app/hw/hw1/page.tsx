@@ -5,6 +5,7 @@ import { FaGithub } from "react-icons/fa";
 import schedule from '@/data/schedule';
 import Link from 'next/link';
 import type { Metadata } from "next";
+import { Temporal } from 'temporal-polyfill'
 
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { vs } from 'react-syntax-highlighter/dist/esm/styles/prism';

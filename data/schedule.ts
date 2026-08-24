@@ -1,3 +1,4 @@
+import { Temporal } from 'temporal-polyfill'
 let startDate = new Temporal.PlainDate(2026, 8, 27)
 
 const schedule = [
