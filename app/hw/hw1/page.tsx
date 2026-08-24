@@ -25,6 +25,8 @@ const SECTIONS = [
   }
 ];
 
+let dueDate = new Temporal.PlainDateTime(2026, 9, 10, 11, 59)
+
 export const metadata: Metadata = {
   title: "HW1 | CIS 1962",
   description: "Homework 1 Page of CIS 1962 for Spring 2026 at the University of Pennsylvania",
@@ -39,7 +41,7 @@ export default function DataAnalysis() {
       <div className="mx-auto text-lg">
         {/* Title */}
         <h1 className='text-3xl sm:text-4xl md:text-5xl font-bold'>Homework 1: Data Analysis</h1>
-        <h3 className='text-lg sm:text-xl md:text-2xl opacity-60 mb-4'>Due January 29th at 11:59 PM</h3>
+        <h3 className='text-lg sm:text-xl md:text-2xl opacity-90 mb-4'>Due {`${dueDate.month}/${dueDate.day} at ${dueDate.toPlainTime().toString({ smallestUnit: "minute" })} PM`}</h3>
 
         <div className='red-block font-mono'><span className='font-bold'>Topics:</span> CSV File Parsing, Data Cleaning, Destructuring, Array Methods, Control Flow, Template Literals, Data Analysis/Aggregation</div>
 
@@ -64,7 +66,7 @@ export default function DataAnalysis() {
         <section id="introduction" className="scroll-mt-48 space-y-8 mb-8">
           <h2 className="text-2xl sm:text-3xl md:text-4xl text-indigo-600 font-bold mb-2 flex gap-2"> <FaPlug /> Introduction &amp; Installation</h2>
           <a
-            // href={schedule[0].homework?.starter}
+            href={schedule[0].homework?.starter}
             download
             aria-label="Download starter files as zip"
             className="flex justify-center items-center gap-1 px-4 py-2 bg-red-600 hover:bg-red-700 active:bg-red-800 text-white rounded-lg font-semibold shadow transition focus:outline-none focus:ring-2 focus:ring-red-300 w-1/2 my-4 cursor-pointer"

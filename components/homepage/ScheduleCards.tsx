@@ -25,7 +25,7 @@ export default function ScheduleCards({item, idx}: {item: any, idx: number}) {
                 <div className="grid grid-cols-4 gap-2 mt-4">
                     <div className="flex flex-col col-span-2 items-center gap-2">
                         <MdDateRange className="text-4xl text-red-700" />
-                        <span className="font-medium">{item.date}</span>
+                        <span className="font-medium">{`${item.date.month}/${item.date.day}`}</span>
                     </div>
                     {item.slides && (
                         <a
@@ -50,14 +50,14 @@ export default function ScheduleCards({item, idx}: {item: any, idx: number}) {
                         </a>
                     )}
                 </div>
-
-                {/* HW content MOBILE */}
+                
                 {item.due && (
                     <div 
-                        className="lg:hidden mt-4 bg-indigo-50 text-indigo-700 border border-indigo-700 rounded-lg p-4 text-xl font-bold">{item.due}
+                        className="mt-4 bg-indigo-50 text-indigo-700 border border-indigo-700 rounded-lg p-4 text-xl font-bold">{item.due}
                     </div>
                 )}
 
+                {/* HW content MOBILE */}
                 {item.homework && (
                     <div className="lg:hidden flex items-center px-8 py-4 gap-8 text-indigo-700 bg-indigo-50 mt-4 rounded-lg border border-indigo-700">
                         {item.homework.icon && (
@@ -69,7 +69,7 @@ export default function ScheduleCards({item, idx}: {item: any, idx: number}) {
                             <div className="font-bold text-xl">{item.homework.id} - {item.homework.title}</div>
                             <div className="grid grid-rows-2 grid-cols-2 gap-3 mt-2">
                             <div className="col-span-2 flex items-center justify-center">
-                                <span className="font-medium text-lg">Due: {item.homework.due.toLocaleDateString()}</span>
+                                <span className="font-medium text-lg">Due: {`${item.homework.due.month}/${item.homework.due.day}`}</span>
                             </div>
                             {item.homework.detailsUrl && (
                                 <a
@@ -119,7 +119,7 @@ export default function ScheduleCards({item, idx}: {item: any, idx: number}) {
                         <div className="grid grid-cols-3 gap-3 mt-6">
                             <div className="flex flex-col items-center gap-2">
                                 <span className="font-medium">Due:</span>
-                                <span className="font-bold">{item.homework.due.toLocaleDateString()}</span>
+                                <span className="font-bold text-xl">{`${item.homework.due.month}/${item.homework.due.day}`}</span>
                             </div>
                             {item.homework.detailsUrl && (
                                 <a

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className='scroll-mt-48 grow flex flex-col items-center gap-16'>
+    <div className='scroll-mt-48 grow flex flex-col items-center gap-8'>
       <WelcomeCard />
       <ScheduleTable />
       <ResourcesCards />
