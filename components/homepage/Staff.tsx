@@ -1,5 +1,5 @@
 import Image from "next/image";
-import eunsoo_pic from "@/assets/eunsoo_ta_pic.jpeg"
+import dejah_pic from "@/assets/dejah.jpg"
 import v_pic from "@/assets/v.jpg"
 import { MdMail } from "react-icons/md"; 
 
@@ -27,7 +27,7 @@ const Staff = () => {
                         <div className="text-xl font-bold mb-1">Voravich Silapachairueng</div>
                         <div className="text-indigo-800 font-medium mb-2">Instructor</div>
                         <a
-                            href="mailto:voravich@seas.upenn.edu"
+                            href="mailto:voravich@engineering.upenn.edu"
                             className="inline-flex items-center gap-1 text-indigo-700 underline hover:text-red-700 transition text-sm mb-2 break-all"
                             aria-label="Email Voravich Silapachairueng"
                         >
@@ -44,32 +44,32 @@ const Staff = () => {
                         </div>
                         
                     </div>
-                    {/* <div className="bg-white text-blue-900 rounded-xl shadow-lg w-80 flex items-center flex-col">
+                    <div className="bg-white text-blue-900 rounded-xl shadow-lg w-80 flex items-center flex-col">
                         <div className="w-full aspect-square overflow-hidden mb-6 rounded-t-xl">
                             <Image
-                                src={eunsoo_pic}
-                                alt="Eunsoo Shin"
-                                width={2208}
-                                height={2944}
+                                src={dejah_pic}
+                                alt="Dejah Madhusankar"
+                                width={1696}
+                                height={1747}
                                 className="inset-0 w-full h-full object-cover object-center"
                             />
                         </div>
-                        <div className="text-xl font-bold mb-1">Eunsoo Shin</div>
-                        <div className="text-indigo-800 font-medium mb-2">Co-Instructor</div>
+                        <div className="text-xl font-bold mb-1">Dejah Madhusankar</div>
+                        <div className="text-indigo-800 font-medium mb-2">Teaching Assistant</div>
                         <a
-                            href="mailto:esinx@seas.upenn.edu"
+                            href="mailto:dejah7@engineering.upenn.edu"
                             className="inline-flex items-center gap-1 text-indigo-700 underline hover:text-red-700 transition text-sm mb-2 break-all"
-                            aria-label="Email Voravich Silapachairueng"
+                            aria-label="Email Dejah"
                         >
                             <MdMail className="text-lg" aria-hidden="true" />
-                            esinx@seas.upenn.edu
+                            dejah7@engineering.upenn.edu
                         </a>
                         <div>Office Hours: </div>
-                        <div>Wednesday, 5 - 7 PM at Levine 601 (Bump Space)</div>
+                        <div>TBD</div>
                         <div className="text-sm text-gray-600 mt-1 fw p-6">
-                            Hey! I'm a junior studying NETS and have been in love with JavaScript & TypeScript since I was 11. I love listening to rock music and playing the electric bass in my free time.
+                            Hello! I'm a first-year master's student at Penn CIS with prior experience as a full-stack SWE at a fintech SaaS company. I like building sleek and innovative UI features for websites, and at other times I work on my Computer Vision research. I'm a dancer, writer, and most importantly, a huge socializer. So if it's not about homework, feel free to drop in for a chat about anything and nothing! Cheers to a great semester!
                         </div>
-                    </div> */}
+                    </div>
                 </div>
             </div>
         </section>
