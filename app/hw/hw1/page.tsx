@@ -290,7 +290,10 @@ const csv = Papa.parse(some_data);`}</SyntaxHighlighter>
             </p>  
             <h3 className='text-lg sm:text-xl md:text-2xl font-bold mb-2'>Submission</h3>
             <p className='ml-4'>
-                Submit your code through Gradescope as a <span className='inline-code'>.zip</span> file that contains your project. Make sure your project includes all files you worked on during this homework and your <span className='inline-code'>README.md</span> file. Before you submit, make sure you lint your code for style errors using the command <span className='inline-code'>npm run lint</span>. More details on style can be found in the <Link href='/styleguide' className="link">style guide</Link>. We will take -1 points for every style error remaining in the submission for the submitted files. You may also test your code against our provided Mocha test suite, which contain the all the tests we will run on your code for grading, using <span className='inline-code'>npm test</span>. This homework does NOT have an autograder in Gradescope.
+                Submit your code through Gradescope as a <span className='inline-code'>.zip</span> file that contains your project. Make sure your project includes all files you worked on during this homework and your <span className='inline-code'>README.md</span> file. You should NOT include the node_modules folder in the <span className='inline-code'>.zip</span> file (feel free to delete it), as it is quite heavy and we will reinstall the dependencies for grading anyways.
+            </p>
+            <p className='ml-4'>
+                 Before you submit, make sure you lint your code for style errors using the command <span className='inline-code'>npm run lint</span>. More details on style can be found in the <Link href='/styleguide' className="link">style guide</Link>. We will take -1 points for every style error remaining in the submission for the submitted files. You may also test your code against our provided Mocha test suite, which contain the all the tests we will run on your code for grading, using <span className='inline-code'>npm test</span>. This homework does NOT have an autograder in Gradescope.
             </p>
         </section>
       </div>
