@@ -6,7 +6,7 @@ const schedule = [
     id: 1,
     date: startDate,
     topic: "Introduction to JavaScript",
-    slides: "/lectures/Lec1_1962_fa26",
+    slides: "/lectures/Lec1_1962_fa26.pdf",
     code: "https://edstem.org/us/courses/102363/lessons/179709/slides/1056325",
     homework:   { 
       id: 'HW1',
