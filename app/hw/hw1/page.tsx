@@ -1,7 +1,7 @@
 import SideNav from '@/components/Sidenav';
 import { FaPlug, FaClipboardList, FaRobot } from "react-icons/fa";
 import { MdGrade } from "react-icons/md";
-import { FaGithub } from "react-icons/fa";
+import { FaCode } from "react-icons/fa";
 import schedule from '@/data/schedule';
 import Link from 'next/link';
 import type { Metadata } from "next";
@@ -72,7 +72,7 @@ export default function DataAnalysis() {
             aria-label="Download starter files as zip"
             className="flex justify-center items-center gap-1 px-4 py-2 bg-red-600 hover:bg-red-700 active:bg-red-800 text-white rounded-lg font-semibold shadow transition focus:outline-none focus:ring-2 focus:ring-red-300 w-1/2 my-4 cursor-pointer"
           >
-            <FaGithub className="text-3xl"/> Accept assignment on Github Classroom
+            <FaCode className="text-3xl"/> Starter Code
           </a>
           <p className="ml-4">
             Imagine you are a data analyst for a mobile app developer, and you are tasked with performing analysis on app reviews of various popular apps from users across multiple languages. You have been asked to perform this analysis in JavaScript, and fortunately you have just recently learned the basics of JavaScript, enough to parse, clean, and analyze this data!
