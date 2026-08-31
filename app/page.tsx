@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Home | CIS 1962",
-  description: "Homepage of CIS 1962 for Spring 2026 at the University of Pennsylvania",
+  description: "Homepage of CIS 1962 for Fall 2026 at the University of Pennsylvania",
 };
 
 export default function Home() {
