@@ -79,9 +79,9 @@ export default function Syllabus() {
                     </div>
                     <div className="ml-4 space-y-4">
                         <h3 className='text-xl font-bold text-indigo-600'>Ed Quizzes</h3>
-                        <p className='ml-4'>A check-in quiz to gauge comprehension of lecture material will be due before the start of every lecture after the first lecture. These quizzes will be graded on correctness, and will consist of multiple-choice and open-ended questions related to the previous week's lecture material.</p>
+                        <p className='ml-4'>A check-in quiz to gauge comprehension of lecture material will be due before the start of every lecture after the first lecture (The first one will test lecture 2). These quizzes will be graded on correctness, and will consist of multiple-choice, open-ended questions, and short coding questions related to the previous week's lecture material.</p>
 
-                        <p className='ml-4'>You should <span className="red-bold">not</span> use AI to aid with these quizzes. Think of them as a chance to test your knowledge of the material and to find gaps in knowledge that you can explore. The open-ended questions will also provide enrichment opportunities to go beyond class material with different concepts and libraries of JavaScript.</p>
+                        <p className='ml-4'>You <span className="red-bold">refrain from</span> using AI to aid with these quizzes. Think of them as a chance to test your knowledge of the material and to find gaps in knowledge that you can explore. The open-ended questions will also provide enrichment opportunities to go beyond class material with different concepts and libraries of JavaScript.</p>
                     </div>
                     <div className="ml-4 space-y-4">
                         <h3 className='text-xl font-bold text-indigo-600'>Final Project</h3>
