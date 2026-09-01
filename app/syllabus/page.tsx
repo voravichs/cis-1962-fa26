@@ -89,6 +89,7 @@ export default function Syllabus() {
 
                         <p className='ml-4'>This project can be done solo in a group. It will be mandated that the project be hosted on GitHub and make full use of version control.</p>
                     </div>
+                    
                 </section>
 
                 {/* Late Policy and Others */}
