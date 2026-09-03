@@ -1,7 +1,7 @@
 import { RiSlideshow2Fill } from "react-icons/ri";
 import { IoIosCodeDownload } from "react-icons/io";
-import { MdDateRange, MdCatchingPokemon } from "react-icons/md";
-import { FaGithub, FaInfoCircle, FaCode } from "react-icons/fa";
+import { MdDateRange, MdCatchingPokemon, MdQuiz } from "react-icons/md";
+import { FaGithub, FaInfoCircle, FaCode} from "react-icons/fa";
 
 export default function ScheduleCards({item, idx}: {item: any, idx: number}) {
     return (
@@ -22,7 +22,7 @@ export default function ScheduleCards({item, idx}: {item: any, idx: number}) {
                 <div className="font-bold text-xl mt-8">
                     {item.topic}
                 </div>
-                <div className="grid grid-cols-4 gap-2 mt-4">
+                <div className="grid grid-cols-5 gap-2 mt-4">
                     <div className="flex flex-col col-span-2 items-center gap-2">
                         <MdDateRange className="text-4xl text-red-700" />
                         <span className="font-medium">{`${item.date.month}/${item.date.day}`}</span>
@@ -38,7 +38,7 @@ export default function ScheduleCards({item, idx}: {item: any, idx: number}) {
                             <span className="font-medium">Slides</span>
                         </a>
                         )}
-                        {item.code && (
+                    {item.code && (
                         <a
                             href={item.code}
                             download
@@ -47,6 +47,17 @@ export default function ScheduleCards({item, idx}: {item: any, idx: number}) {
                         >
                             <IoIosCodeDownload className="text-4xl" />
                             <span className="font-medium">Code</span>
+                        </a>
+                    )}
+                    {item.quiz && (
+                        <a
+                            href={item.quiz}
+                            download
+                            aria-label="Open the weekly check-in quiz"
+                            className="flex flex-col items-center gap-2 text-slate-700 hover:text-indigo-700"
+                        >
+                            <MdQuiz className="text-4xl" />
+                            <span className="font-medium">Quiz</span>
                         </a>
                     )}
                 </div>

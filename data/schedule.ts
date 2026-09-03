@@ -23,8 +23,9 @@ const schedule = [
     id: 2,
     date: startDate.add({weeks: 1}),
     topic: "Collections, Control Flow, and Strings",
-    slides: "",
-    code: "",
+    slides: "/lectures/Lec2_1962_fa26.pdf",
+    code: "https://edstem.org/us/courses/102363/lessons/180100/slides/1059063",
+    quiz: "https://edstem.org/us/courses/102363/lessons/180420/slides/1061036"
   },
   {
     id: 3,
