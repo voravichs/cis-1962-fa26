@@ -282,9 +282,9 @@ export default function HW2() {
                         For your unit tests, you must write:
                     </p>
                     <ul className="text-lg ml-12 list-disc">
-                        <li>1 test containing a valid catalog</li>
-                        <li>1 test containing an invalid catalog </li>
-                        <li>2 test containing custom catalog(s) you wrote yourself (not provided by the starter)</li>
+                        <li><span className="red-bold">1 test</span> containing a valid catalog</li>
+                        <li><span className="red-bold">1 test</span> containing an invalid catalog </li>
+                        <li><span className="red-bold">2 tests</span> containing custom catalog(s) you wrote yourself (not provided by the starter)</li>
                     </ul>
                     <p className="ml-4">
                         Since you are writing your own JSON catalogs, be sure to include these files with your submission!
@@ -340,7 +340,7 @@ export default function HW2() {
                                 <li>A main script</li>
                                 <li>A license</li>
                             </ul>
-                            <li><span className='red-bold'>[1pts]</span> Only the packages required in your source code should be listed as <span className='inline-code'>dependencies</span>. The rest should be <span className='inline-code'>devDependencies</span>.</li>
+                            <li><span className='red-bold'>[1pts]</span> Only the packages required during runtime should be listed as <span className='inline-code'>dependencies</span>. The rest should be <span className='inline-code'>devDependencies</span>.</li>
                         </ul>  
                     </div>
                     <div className="ml-4">
@@ -404,7 +404,7 @@ export default function HW2() {
                             <ul className="text-lg ml-6 list-disc ">
                                 <li>1 test containing a valid catalog</li>
                                 <li>1 test containing an invalid catalog </li>
-                                <li>2 test containing custom catalog(s) you wrote yourself (not provided by the starter)</li>
+                                <li>2 tests containing custom catalog(s) you wrote yourself (not provided by the starter)</li>
                             </ul>
                             <li><span className='red-bold'>[2pt]</span> Unit tests show attempts to test different validation behaviors and edge cases</li>
                         </ul>  
