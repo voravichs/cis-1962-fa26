@@ -33,7 +33,17 @@ const schedule = [
     slides: "",
     code: "",
     due: "📊 HW1 DUE!",
-    quiz: "https://edstem.org/us/courses/102363/lessons/180420/slides/1061036"
+    quiz: "https://edstem.org/us/courses/102363/lessons/180420/slides/1061036",
+    // homework:   { 
+    //   id: 'HW2',
+    //   title: "Type Validation",
+    //   assigned: startDate.add({weeks: 2}),
+    //   due: startDate.add({weeks: 3}),
+    //   durationWeeks: 1,
+    //   detailsUrl: "/hw/hw2-validation",
+    //   starter: "/hw-starter/hw2-type-validation-cis1962-fa26.zip",
+    //   icon: "🛒"
+    // },
   },
   {
     id: 4,
@@ -41,6 +51,7 @@ const schedule = [
     topic: "HTML, CSS, and the DOM",
     slides: "",
     code: "",
+    due: "🛒 HW2 DUE!",
   },
   {
     id: 5,
