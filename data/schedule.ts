@@ -30,20 +30,20 @@ const schedule = [
     id: 3,
     date: startDate.add({weeks: 2}),
     topic: "Project Management and Introduction to TypeScript",
-    slides: "",
-    code: "",
+    slides: "/lectures/Lec3_1962_fa26.pdf",
+    code: "https://edstem.org/us/courses/102363/lessons/181128/slides/1066202",
     due: "📊 HW1 DUE!",
     quiz: "https://edstem.org/us/courses/102363/lessons/180420/slides/1061036",
-    // homework:   { 
-    //   id: 'HW2',
-    //   title: "Type Validation",
-    //   assigned: startDate.add({weeks: 2}),
-    //   due: startDate.add({weeks: 3}),
-    //   durationWeeks: 1,
-    //   detailsUrl: "/hw/hw2-validation",
-    //   starter: "/hw-starter/hw2-type-validation-cis1962-fa26.zip",
-    //   icon: "🛒"
-    // },
+    homework:   { 
+      id: 'HW2',
+      title: "Type Validation",
+      assigned: startDate.add({weeks: 2}),
+      due: startDate.add({weeks: 3}),
+      durationWeeks: 1,
+      detailsUrl: "/hw/hw2-validation",
+      starter: "/hw-starter/hw2-type-validation-cis1962-fa26.zip",
+      icon: "🛒"
+    },
   },
   {
     id: 4,
