@@ -52,6 +52,7 @@ const schedule = [
     slides: "",
     code: "",
     due: "🛒 HW2 DUE!",
+    quiz: "https://edstem.org/us/courses/102363/lessons/181473/slides/1068121",
   },
   {
     id: 5,
