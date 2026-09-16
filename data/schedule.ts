@@ -53,6 +53,18 @@ const schedule = [
     code: "",
     due: "🛒 HW2 DUE!",
     quiz: "https://edstem.org/us/courses/102363/lessons/181473/slides/1068121",
+    homework:   { 
+      id: 'HW3',
+      title: "Portfolio",
+      assigned: startDate.add({weeks: 3}),
+      due: startDate.add({weeks: 4}),
+      durationWeeks: 1,
+      // detailsUrl: "/hw/hw3-portfolio",
+      // starter: "/hw-starter/hw3-portfolio-cis1962-fa26.zip",
+      detailsUrl: "",
+      starter: "",
+      icon: "✍🏻"
+    },
   },
   {
     id: 5,
@@ -60,6 +72,7 @@ const schedule = [
     topic: "Asynchronous JavaScript, OOP, and Error Handling",
     slides: "",
     code: "",
+    due: "✍🏻 HW3 DUE!",
   },
   {
     id: "-",

@@ -30,7 +30,7 @@ let dueDate = new Temporal.PlainDateTime(2026, 9, 10, 11, 59)
 
 export const metadata: Metadata = {
   title: "HW1 | CIS 1962",
-  description: "Homework 1 Page of CIS 1962 for Spring 2026 at the University of Pennsylvania",
+  description: "Homework 1 Page of CIS 1962 for Fall 2026 at the University of Pennsylvania",
 };
 
 export default function DataAnalysis() {

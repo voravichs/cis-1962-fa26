@@ -1,14 +1,11 @@
 import SideNav from '@/components/Sidenav';
-import { FaGithub, FaPlug, FaRobot, FaPizzaSlice, FaClipboardList, FaCode } from "react-icons/fa";
+import { FaPlug, FaClipboardList, FaCode } from "react-icons/fa";
 import { MdGrade } from "react-icons/md";
 import schedule from '@/data/schedule';
 
-import Link from 'next/link';
 import type { Metadata } from "next";
 import XLink from '@/components/XLink';
 
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { vs } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 const SECTIONS = [
   {
@@ -27,7 +24,7 @@ const SECTIONS = [
 
 export const metadata: Metadata = {
   title: "HW2 | CIS 1962",
-  description: "Homework 2 Page of CIS 1962 for Spring 2026 at the University of Pennsylvania",
+  description: "Homework 2 Page of CIS 1962 for Fall 2026 at the University of Pennsylvania",
 };
 
 export default function HW2() {
