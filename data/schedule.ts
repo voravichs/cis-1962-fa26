@@ -49,8 +49,8 @@ const schedule = [
     id: 4,
     date: startDate.add({weeks: 3}),
     topic: "HTML, CSS, and the DOM",
-    slides: "",
-    code: "",
+    slides: "/lectures/Lec4_1962_fa26.pdf",
+    code: "https://edstem.org/us/courses/102363/lessons/181472/slides/1068113",
     due: "🛒 HW2 DUE!",
     quiz: "https://edstem.org/us/courses/102363/lessons/181473/slides/1068121",
     homework:   { 
@@ -59,10 +59,8 @@ const schedule = [
       assigned: startDate.add({weeks: 3}),
       due: startDate.add({weeks: 4}),
       durationWeeks: 1,
-      // detailsUrl: "/hw/hw3-portfolio",
-      // starter: "/hw-starter/hw3-portfolio-cis1962-fa26.zip",
-      detailsUrl: "",
-      starter: "",
+      detailsUrl: "/hw/hw3-portfolio",
+      starter: "/hw-starter/hw3-portfolio-cis1962-fa26.zip",
       icon: "✍🏻"
     },
   },
@@ -73,6 +71,7 @@ const schedule = [
     slides: "",
     code: "",
     due: "✍🏻 HW3 DUE!",
+    quiz: "https://edstem.org/us/courses/102363/lessons/182012/slides/1072385",
   },
   {
     id: "-",
