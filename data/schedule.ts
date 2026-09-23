@@ -72,6 +72,18 @@ const schedule = [
     code: "",
     due: "✍🏻 HW3 DUE!",
     quiz: "https://edstem.org/us/courses/102363/lessons/182012/slides/1072385",
+    homework:   { 
+      id: 'HW4',
+      title: "ChatJS",
+      assigned: startDate.add({weeks: 4}),
+      due: startDate.add({weeks: 6}),
+      durationWeeks: 1,
+      // detailsUrl: "/hw/hw4-chatjs",
+      // starter: "/hw-starter/hw4-chatjs-cis1962-fa26.zip",
+      detailsUrl: "",
+      starter: "",
+      icon: "💬"
+    },
   },
   {
     id: "-",
@@ -86,6 +98,7 @@ const schedule = [
     topic: "Introduction to React and Web Bundlers",
     slides: "",
     code: "",
+    due: "💬 HW4 DUE!",
   },
   {
     id: 7,
