@@ -162,7 +162,7 @@ const GEMINI_API_URL = "https://generativelanguage.googleapis.com/...";`}</Synta
 const BASE_URL = "https://cis-1962-fa26-hw4.onrender.com/api";
 const API_KEY = "YOUR_CHAT_API_KEY";`}</SyntaxHighlighter>
                     </div>
-                    <div className='red-block'>
+                    <div className='red-block px-8'>
                         <h4 className='font-bold'> Important: Cold-Starting the API</h4>
                         <p>
                             When you make the first request to the API after it has been idle for a while, it may take a long time to respond (up to a minute or two) since the server needs to "wake up" from idleness. This is called cold-starting. To avoid this, you can make a simple GET request to the /chat endpoint right after you initialize the app to wake up the server. You can type the following command into the terminal to make a simple API request to wake up the server and start working:
@@ -184,7 +184,7 @@ const API_KEY = "YOUR_CHAT_API_KEY";`}</SyntaxHighlighter>
                 <section className='space-y-4'>
                     <h3 className='text-lg sm:text-xl md:text-2xl font-bold mb-2 text-indigo-600'>Part 1: ChatAPI & Persistence</h3>
                     <pre className='red-block ml-4 w-full'>
-                        <b>Files</b>: <span className='inline-code'>chat-api.ts</span>, <span className='inline-code'>script.ts</span>
+                        <b>Files</b>: <span className='inline-code'>chat-api.ts</span>
                     </pre>
                     <p className="ml-4">
                         We will begin by implementing the chat API to save the chat history. Implement the following in the <span className='inline-code'>chat-api.ts</span> file:

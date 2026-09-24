@@ -68,8 +68,8 @@ const schedule = [
     id: 5,
     date: startDate.add({weeks: 4}),
     topic: "Asynchronous JavaScript, OOP, and Error Handling",
-    slides: "",
-    code: "",
+    slides: "/lectures/Lec5_1962_fa26.pdf",
+    code: "https://edstem.org/us/courses/102363/lessons/182010/slides/1072375",
     due: "✍🏻 HW3 DUE!",
     quiz: "https://edstem.org/us/courses/102363/lessons/182012/slides/1072385",
     homework:   { 
@@ -78,10 +78,8 @@ const schedule = [
       assigned: startDate.add({weeks: 4}),
       due: startDate.add({weeks: 6}),
       durationWeeks: 1,
-      // detailsUrl: "/hw/hw4-chatjs",
-      // starter: "/hw-starter/hw4-chatjs-cis1962-fa26.zip",
-      detailsUrl: "",
-      starter: "",
+      detailsUrl: "/hw/hw4-chatjs",
+      starter: "/hw-starter/hw4-chatjs-cis1962-fa26.zip",
       icon: "💬"
     },
   },
@@ -99,6 +97,7 @@ const schedule = [
     slides: "",
     code: "",
     due: "💬 HW4 DUE!",
+    quiz: "https://edstem.org/us/courses/102363/lessons/183044/slides/1080428",
   },
   {
     id: 7,
