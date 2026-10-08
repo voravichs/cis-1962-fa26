@@ -94,10 +94,20 @@ const schedule = [
     id: 6,
     date: startDate.add({weeks: 6}),
     topic: "Introduction to React and Web Bundlers",
-    slides: "",
-    code: "",
+    slides: "/lectures/Lec6_1962_fa26.pdf",
+    code: "https://edstem.org/us/courses/102363/lessons/183043/slides/1080419",
     due: "💬 HW4 DUE!",
     quiz: "https://edstem.org/us/courses/102363/lessons/183044/slides/1080428",
+    homework:   { 
+      id: 'HW5',
+      title: "Pokedex",
+      assigned: startDate.add({weeks: 6}),
+      due: startDate.add({weeks: 8}),
+      durationWeeks: 1,
+      detailsUrl: "/hw/hw5-pokedex",
+      starter: "/hw-starter/hw5-pokedex-cis1962-fa26.zip",
+      icon: "pokemon"
+    },
   },
   {
     id: 7,

@@ -28,7 +28,7 @@ const SECTIONS = [
 
 export const metadata: Metadata = {
   title: "HW4 | CIS 1962",
-  description: "Homework 4 Page of CIS 1962 for Spring 2026 at the University of Pennsylvania",
+  description: "Homework 4 Page of CIS 1962 for Fall 2026 at the University of Pennsylvania",
 };
 
 export default function HW4() {

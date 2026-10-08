@@ -1,6 +1,5 @@
 import SideNav from '@/components/Sidenav';
 import { FaPlug, FaClipboardList} from "react-icons/fa";
-// import DogCarousel from '@/components/DogCarousel';
 import ModalDemo from '@/components/demos/ModalDemo';
 import Image from 'next/image';
 import hw5_1 from '@/assets/hw5-1.png';
@@ -10,6 +9,7 @@ import schedule from '@/data/schedule';
 
 import type { Metadata } from "next";
 import XLink from '@/components/XLink';
+import Link from 'next/link';
 
 const SECTIONS = [
   {
@@ -28,7 +28,7 @@ const SECTIONS = [
 
 export const metadata: Metadata = {
   title: "HW5 | CIS 1962",
-  description: "Homework 5 Page of CIS 1962 for Spring 2026 at the University of Pennsylvania",
+  description: "Homework 5 Page of CIS 1962 for Fall 2026 at the University of Pennsylvania",
 };
 
 export default function HW5() {
@@ -40,7 +40,7 @@ export default function HW5() {
         <div className="mx-auto text-lg">
             {/* Title */}
             <h1 className='text-3xl sm:text-4xl md:text-5xl font-bold'>Homework 5: Pokedex</h1>
-            <h3 className='text-lg sm:text-xl md:text-2xl opacity-60 mb-4'>Due March 5th at 11:59 PM</h3>
+            <h3 className='text-lg sm:text-xl md:text-2xl opacity-60 mb-4'>Due October 22nd at 11:59 PM</h3>
 
             <div className='red-block font-mono'><span className='font-bold'>Topics:</span> Frontend, React props, React States, Modals, Pagination, Search</div>
 
@@ -63,7 +63,7 @@ export default function HW5() {
 
                 {/* Starter Code */}
                 <a
-                    // href={schedule[6].homework?.starter}
+                    href={schedule[6].homework?.starter}
                     className="flex justify-center items-center gap-1 px-4 py-2 bg-red-600 hover:bg-red-700 active:bg-red-800 text-white rounded-lg font-semibold shadow transition focus:outline-none focus:ring-2 focus:ring-red-300 w-1/2 my-4 cursor-pointer mx-auto"
                 >
                     Starter Code
@@ -81,7 +81,7 @@ export default function HW5() {
                     <ul className="text-lg ml-12 list-disc">
                         <li><b>Pokémon</b>: A creature that can be caught and stored in your Pokedex</li>
                         <li><b>Pokedex</b>: A device for viewing Pokémon information and tracking catches</li>
-                        <li><b>Box</b>: An online storage container for caught Pokémon entries</li>
+                        <li><b>Type</b>: The elemental category of a Pokémon, such as Fire, Water, or Grass. Each Pokemon can have one or two types.</li>
                     </ul>
                     <p className="ml-4">
                         There are many online resources you may reference to inspire the design of your Pokedex. For instance, <XLink link='https://dex.pokemonshowdown.com/pokemon/' text='Pokémon Showdown'/> has a searchable Pokedex that contains a lot of information. Your web application will show a much smaller subset of information and be paginated, but should generally show serve a similar function to similar online Pokedexes.
@@ -97,7 +97,7 @@ export default function HW5() {
                     <ul className="text-lg ml-12 list-disc">
                         <li><span className='inline-code'>colors.ts</span> in <span className='inline-code'>util</span></li>
                         <li><span className='inline-code'>types.ts</span> in <span className='inline-code'>util</span></li>
-                        <li> <span className='inline-code'>prettier</span> config and format command</li>
+                        <li> <span className='inline-code'>prettier</span>/<span className='inline-code'>eslint</span> configs and commands</li>
                         <li><span className='inline-code'>README.md</span></li>
                         <li><span className='inline-code'>API.md</span></li>
                     </ul>  
@@ -116,7 +116,7 @@ export default function HW5() {
                         Similar to homework 3, there is no required style or layout for this project, but you should make sure your app is visually appealing and easy to use. We provide suggestions for design throughout this assignment, but you may choose to implement a different style if you prefer, so long as it still meets the criteria of the rubric. 
                     </p>
                     <p className='ml-4'>
-                        You may also elect to use a style library such as Tailwind CSS, Material UI, or Bootstrap to style your app and make your life easier during development. If you choose to use a style library, make sure to include the necessary dependencies and configuration in your project. Make sure in your submission, you provide all the files and instructions (in your README) needed to run your project if it requires more than just running <span className='inline-code'>npm install</span> and <span className='inline-code'>npm run dev</span>.
+                        You may also elect to use a style/component library such as Tailwind CSS, Material UI, or Bootstrap to style your app and make your life easier during development. If you choose to use a style library, make sure to include the necessary dependencies and configuration in your project. Make sure in your submission, you provide all the files and instructions (in your README) needed to run your project if it requires more than just running <span className='inline-code'>npm install</span> and <span className='inline-code'>npm run dev</span>.
                     </p>
                 </section>
             </section>
@@ -174,7 +174,7 @@ export default function HW5() {
                             Pagination is a UI pattern that breaks up content into different pages, with buttons to switch between the pages. This is commonly used in web applications to make it easier for users to navigate through large amounts of content without being overwhelmed.
                         </p>
                         <p className='flex-center'>
-                            Image carousels are a common example of pagination, as seen below:
+                            Image carousels are a common example of pagination, as seen below (non-interactive example, yours should be interactive!):
                         </p>
                         <div className="flex-center mt-4">
                             <Image
@@ -241,10 +241,10 @@ export default function HW5() {
                 <section className='space-y-4'>
                     <h3 className='text-lg sm:text-xl md:text-2xl font-bold mb-2 text-indigo-600'>Submission</h3>
                     <p className='ml-4'>
-                        Submit your code through Gradescope as a <span className='inline-code'>.zip</span> file that contains your project. Make sure your project includes all files you worked on during this homework and your <span className='inline-code'>README.md</span> file. Make sure the submitted file structure within your submission is <span className='red-bold'>exactly or similar</span> to the file structure you used to run and develop the project. Points will be taken off for malformed project structures in the final submission!
+                        Submit your code through Gradescope as a <span className='inline-code'>.zip</span> file that contains your project. Make sure your project includes all files you worked on during this homework and your <span className='inline-code'>README.md</span> file, all config files for TS, eslint, and prettier, your test script, and the every JSON file used in the tests. You should NOT include the <span className='inline-code'>node_modules</span> folder in the <span className='inline-code'>.zip</span> file (feel free to delete it before submission), as it is quite heavy and we will reinstall the dependencies for grading anyways. Make sure the submitted file structure within your submission is <span className='red-bold'>exactly or similar</span> to the file structure you used to run and develop the project. Points will be taken off for malformed project structures in the final submission!
                     </p>
                     <p className='ml-4'>
-                        Before you submit, make sure you lint your code for style errors using the command <span className='inline-code'>npm run lint</span>. We will be using the eslint rules provided by Vite for linting this project.
+                        Before you submit, make sure you lint your code for style errors using the command <span className='inline-code'>npm run lint</span>. More details on style can be found in the <Link className='link' href={"/styleguide"}>style guide</Link>. We will take -1 points for every style error remaining in the submission for the submitted files. Since this project requires you to make your own ESLint, we will use your linting rules instead of the standard rules we would apply, so make sure you pass your own set of style rules!
                     </p>
                     <p className='ml-4'>
                         For this homework, we've provided a rubric file named <span className='inline-code'>RUBRIC.md</span> in the starter code. Make sure to read through it carefully and ensure that your submission meets all the requirements outlined in the rubric. This will help you maximize your score and ensure that you've covered all necessary aspects of the assignment.
