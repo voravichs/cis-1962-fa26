@@ -123,6 +123,7 @@ const schedule = [
     topic: "Backend with Express.js and Authorization",
     slides: "",
     code: "",
+    due: "🔴 HW5 DUE!",
   },
   {
     id: 9,
