@@ -115,6 +115,7 @@ const schedule = [
     topic: "React: Hooks, Style, Routing, and Libraries",
     slides: "",
     code: "",
+    quiz: "https://edstem.org/us/courses/102363/lessons/184696/slides/1091983",
   },
   {
     id: 8,
