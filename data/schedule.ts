@@ -113,8 +113,8 @@ const schedule = [
     id: 7,
     date: startDate.add({weeks: 7}),
     topic: "React: Hooks, Style, Routing, and Libraries",
-    slides: "",
-    code: "",
+    slides: "/lectures/Lec7_1962_fa26.pdf",
+    code: "https://edstem.org/us/courses/102363/lessons/184695/slides/1091973",
     quiz: "https://edstem.org/us/courses/102363/lessons/184696/slides/1091983",
   },
   {
