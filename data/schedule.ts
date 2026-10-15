@@ -123,6 +123,7 @@ const schedule = [
     topic: "Backend with Express.js and Authorization",
     slides: "",
     code: "",
+    quiz: "https://edstem.org/us/courses/102363/lessons/185332/slides/1095340",
     due: "🔴 HW5 DUE!",
   },
   {
