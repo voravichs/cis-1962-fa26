@@ -125,6 +125,18 @@ const schedule = [
     code: "",
     quiz: "https://edstem.org/us/courses/102363/lessons/185332/slides/1095340",
     due: "🔴 HW5 DUE!",
+    homework:   { 
+      id: 'HW6',
+      title: "Blog Part 1",
+      assigned: startDate.add({weeks: 8}),
+      due: startDate.add({weeks: 9}),
+      durationWeeks: 1,
+      // detailsUrl: "/hw/hw6-blogp1",
+      // starter: "/hw-starter/hw6-blogp1-cis1962-fa26.zip",
+      detailsUrl: "",
+      starter: "",
+      icon: "📝"
+    },
   },
   {
     id: 9,
@@ -132,6 +144,7 @@ const schedule = [
     topic: "Deployment, Caching, and Web Security",
     slides: "",
     code: "",
+    due: "📝 HW6 DUE!",
   },
   {
     id: 10,

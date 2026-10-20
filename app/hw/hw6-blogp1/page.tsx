@@ -9,6 +9,7 @@ import XLink from '@/components/XLink';
 
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { vs } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import Link from 'next/dist/client/link';
 
 const SECTIONS = [
   {
@@ -43,7 +44,7 @@ const SECTIONS = [
 
 export const metadata: Metadata = {
   title: "HW6 | CIS 1962",
-  description: "Homework 6 Page of CIS 1962 for Spring 2026 at the University of Pennsylvania",
+  description: "Homework 6 Page of CIS 1962 for Fall 2026 at the University of Pennsylvania",
 };
 
 export default function HW6() {
@@ -55,14 +56,14 @@ export default function HW6() {
         <div className="mx-auto text-lg">
             {/* Title */}
             <h1 className='text-3xl sm:text-4xl md:text-5xl font-bold'>Homework 6: Blog Part 1</h1>
-            <h3 className='text-lg sm:text-xl md:text-2xl opacity-60 mb-4'>Due March 19th at 11:59 PM</h3>
+            <h3 className='text-lg sm:text-xl md:text-2xl opacity-60 mb-4'>Due October 29th at 11:59 PM</h3>
 
             <div className='red-block font-mono'><span className='font-bold'>Topics:</span> Backend, Express.js, Account Management Systems, JWT Authentication, Redis Cloud Database</div>
 
             {/* Intro Text */}
             <section className="space-y-8 mb-8">
                 <p className="ml-4">
-                    In this homework, you will build the backend for a simple blogging platform using Express.js. This will be a multi-part homework that will continue after Spring Break with connecting to the frontend and deploying the application, but in this first part you will focus on building the backend and implementing the core functionality of the application. You will implement a RESTful API with Express.js that allows users to create accounts, log in, create blog posts, and view blog posts. You will also implement JWT authentication to secure the API endpoints and ensure that only authenticated users can access certain functionality. Finally, you'll connect to a Redis Cloud database to store user information, blog posts, and comments. This homework will give you practice working with backend development, Express.js, and authentication, which are all important skills for web developers.
+                    In this homework, you will build the backend for a simple blogging platform using Express.js. This will be a multi-part homework that will continue into HW7 with connecting to the frontend and deploying the application, but in this first part you will focus on building the backend and implementing the core functionality of the application. You will implement a RESTful API with Express.js that allows users to create accounts, log in, create blog posts, and view blog posts. You will also implement JWT authentication to secure the API endpoints and ensure that only authenticated users can access certain functionality. Finally, you'll connect to a Redis Cloud database to store user information, blog posts, and comments. This homework will give you practice working with backend development, Express.js, and authentication, which are all important skills for web developers.
                 </p>
                 <h3 className='text-lg sm:text-xl md:text-2xl font-bold mb-2'>Assignment Goals</h3>
                 <ul className="text-lg ml-6 list-disc">
@@ -79,7 +80,7 @@ export default function HW6() {
 
                 {/* Starter Code */}
                 <a
-                    // href={schedule[7].homework?.starter}
+                    href={schedule[8].homework?.starter}
                     className="flex justify-center items-center gap-1 px-4 py-2 bg-red-600 hover:bg-red-700 active:bg-red-800 text-white rounded-lg font-semibold shadow transition focus:outline-none focus:ring-2 focus:ring-red-300 w-1/2 my-4 cursor-pointer mx-auto"
                 >
                     Starter Code
@@ -155,6 +156,9 @@ export default function HW6() {
                     <p className='ml-4'>
                         Postman will allow you to make API calls, like <span className='inline-code'>GET http://localhost:3000/register</span> without the need to format a curl command. It also lets you easily add parameters, headers, and body data to your requests, and also provides multiple environments to manage different requests. Take advantage of Postman to thoroughly test your API endpoints with good and bad data, as we will also do the same when grading your homework!
                     </p>
+                    <p className='ml-4'>
+                        If you are not familiar with Postman, we recommend checking out their <XLink link="https://learning.postman.com/docs/getting-started/quick-start/" text="official documentation" /> to get started. You can also use curl commands or other API testing tools if you prefer, but Postman is a great tool for testing APIs and is widely used in the industry. You should at least be able to make basic requests to your API endpoints with parameters and headers and view the responses, so that you can test your backend functionality as you build it.
+                    </p>
                 </section>
 
                 {/* Types */}
@@ -198,12 +202,8 @@ export function getUser(req: Request<Params>, res: Response) {
                         <b>Files</b>: <span className='inline-code'>index.ts</span>
                     </pre>
                     <p className="ml-4">
-                        We will be using <XLink link="https://cloud.redis.io/#/" text='Redis Cloud' /> for this homework to host our Redis database. You should set up an account (with a Google email or GitHub) and create a Redis database instance to use for this homework. You should use the free tier, which provides more than enough resources for this homework. Once you have your Redis database set up, you should have the following information that you will need to connect to your database from your Express server:
+                        We will be using <XLink link="https://cloud.redis.io/#/" text='Redis Cloud' /> for this homework to host our Redis database. You should set up an account (with a Google email or GitHub) and create a Redis database instance to use for this homework. You should use the free 30 MB tier<span className='red-bold'>(it's a smaller button below the paid plans!)</span> , which provides more than enough resources for this homework. Once you have your Redis database set up, find the "connect" button in the dashboard and copy the URL from the redis CLI section. This URL should be in the format of <code className='inline-code'>redis://default:[PASSWORD]@[URL]</code>, and you will need to use this URL to connect to your Redis database from your Express server.
                     </p>
-                    <ul className="text-lg ml-12 list-disc">
-                        <li>A public endpoint (i.e. someting.cloud.redislabs.com)</li>
-                        <li>A password (find this within the Security tab on your database page)</li>
-                    </ul>
                     <p className="ml-4">
                         Next, you should set up your environment variables to securely store this information and use it within your Express server. You should create a <span className='inline-code'>.env</span> file in the root of your project. A <span className='inline-code'>.env.example</span> file has been provided in the starter code with the necessary variable names, so you can just copy that file to <span className='inline-code'>.env</span> and fill in your own information. You should have the following environment variables set up:
                     </p>
@@ -215,7 +215,7 @@ export function getUser(req: Request<Params>, res: Response) {
                         Once you are all set up with Redis (and have made sure to run <span className='inline-code'>npm i</span> to install dependencies), start setting up your Express application in <span className='inline-code'>index.ts</span>. Make sure your Express server can boot up with <span className='inline-code'>npm start</span> without any errors, and test a basic route just to make sure. 
                     </p>
                     <p className='ml-4'>
-                        We have provided a pre-written Redis client that connects to your provided Redis URL. This client is primarily used in your services to interact with the Redis database. For now, you should test that you can connect to your Redis database from your Express server by importing the cilent, starting the server, then testing if you see 'Redis connected successfully' in your terminal. If you don't see this message, make sure to check your environment variables and Redis Cloud setup to ensure everything is correct. 
+                        We have provided a pre-written Redis client that connects to your provided Redis URL. This client is primarily used in your services to interact with the Redis database. For now, you should test that you can connect to your Redis database from your Express server by importing the client, starting the server, then testing if you see 'Redis connected successfully' in your terminal. If you don't see this message, make sure to check your environment variables and Redis Cloud setup to ensure everything is correct. 
                     </p>
                     <div className='blue-block mt-8'>
                         <h4 className='flex-center gap-2 text-2xl font-bold'>Using environment variables</h4>
@@ -648,10 +648,10 @@ export function getUser(req: Request<Params>, res: Response) {
                 <section className='space-y-4'>
                     <h3 className='text-lg sm:text-xl md:text-2xl font-bold mb-2 text-indigo-600'>Submission</h3>
                     <p className='ml-4'>
-                        Submit your code through Gradescope as a <span className='inline-code'>.zip</span> file that contains your project. Make sure your project includes all files you worked on during this homework and your <span className='inline-code'>README.md</span> file. Make sure the submitted file structure within your submission is <span className='red-bold'>exactly or similar</span> to the file structure you used to run and develop the project. Points will be taken off for malformed project structures in the final submission! Additionally, <span className='red-bold'>do not</span> include the <span className='inline-code'>.env</span> folder in your submission! We will be grading your project with our own database to test how your backend interacts with it, so there is no need to include your own environment variables in the submission.
+                        Submit your code through Gradescope as a <span className='inline-code'>.zip</span> file that contains your project. Make sure your project includes all files you worked on during this homework and your <span className='inline-code'>README.md</span> file. You should NOT include the <span className='inline-code'>node_modules</span> folder in the <span className='inline-code'>.zip</span> file (feel free to delete it before submission), as it is quite heavy and we will reinstall the dependencies for grading anyways. Make sure the submitted file structure within your submission is <span className='red-bold'>exactly or similar</span> to the file structure you used to run and develop the project. Points will be taken off for malformed project structures in the final submission!
                     </p>
                     <p className='ml-4'>
-                        Before you submit, make sure you lint your code for style errors using the command <span className='inline-code'>npm run lint</span>. We will be using the eslint rules provided by Vite for linting this project.
+                        Before you submit, make sure you lint your code for style errors using the command <span className='inline-code'>npm run lint</span>. More details on style can be found in the <Link className='link' href={"/styleguide"}>style guide</Link>. We will take -1 points for every style error remaining in the submission for the submitted files. Since this project requires you to make your own ESLint, we will use your linting rules instead of the standard rules we would apply, so make sure you pass your own set of style rules!
                     </p>
                     <p className='ml-4'>
                         For this homework, we've provided a rubric file named <span className='inline-code'>RUBRIC.md</span> in the starter code. Make sure to read through it carefully and ensure that your submission meets all the requirements outlined in the rubric. This will help you maximize your score and ensure that you've covered all necessary aspects of the assignment.
