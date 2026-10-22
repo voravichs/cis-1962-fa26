@@ -166,7 +166,7 @@ const schedule = [
       id: 'Final Project',
       title: "Project Proposal",
       assigned: startDate.add({weeks: 10}),
-      due: startDate.add({weeks: 11, days: 3}),
+      due: startDate.add({weeks: 11}),
       durationWeeks: 1,
       detailsUrl: "",
       starter: "",
