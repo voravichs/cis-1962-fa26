@@ -150,6 +150,8 @@ const schedule = [
       assigned: startDate.add({weeks: 9}),
       due: startDate.add({weeks: 10, days: 3}),
       durationWeeks: 1,
+      // detailsUrl: "/hw/hw7-blogp2",
+      // starter: "/hw-starter/hw7-blogp2-cis1962-fa26.zip",
       detailsUrl: "",
       starter: "",
       icon: "📝"

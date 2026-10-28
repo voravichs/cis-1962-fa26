@@ -56,7 +56,7 @@ export default function HW6() {
         <div className="mx-auto text-lg">
             {/* Title */}
             <h1 className='text-3xl sm:text-4xl md:text-5xl font-bold'>Homework 6: Blog Part 1</h1>
-            <h3 className='text-lg sm:text-xl md:text-2xl opacity-60 mb-4'>Due October 29th at 11:59 PM</h3>
+            <h3 className='text-lg sm:text-xl md:text-2xl opacity-60 mb-4'>Due November 1st at 11:59 PM</h3>
 
             <div className='red-block font-mono'><span className='font-bold'>Topics:</span> Backend, Express.js, Account Management Systems, JWT Authentication, Redis Cloud Database</div>
 

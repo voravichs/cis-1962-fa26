@@ -46,7 +46,7 @@ const SECTIONS = [
 
 export const metadata: Metadata = {
   title: "HW7 | CIS 1962",
-  description: "Homework 7 Page of CIS 1962 for Spring 2026 at the University of Pennsylvania",
+  description: "Homework 7 Page of CIS 1962 for Fall 2026 at the University of Pennsylvania",
 };
 
 export default function HW7() {
@@ -58,14 +58,14 @@ export default function HW7() {
         <div className="mx-auto text-lg">
             {/* Title */}
             <h1 className='text-3xl sm:text-4xl md:text-5xl font-bold'>Homework 7: Blog Part 2</h1>
-            <h3 className='text-lg sm:text-xl md:text-2xl opacity-60 mb-4'>Due April 5th at 11:59 PM</h3>
+            <h3 className='text-lg sm:text-xl md:text-2xl opacity-60 mb-4'>Due November 8th at 11:59 PM</h3>
 
             <div className='red-block font-mono'><span className='font-bold'>Topics:</span> Full Stack Development, Blogging, Cookies, Security, Routing</div>
 
             {/* Intro Text */}
             <section className="space-y-8 mb-8">
                 <p className="ml-4">
-                    This homework is a continuation of <Link className="link" href="/hw/hw6">Homework 6</Link>. In this assignment, you'll be taking your backend and connecting it to a provided frontend to create a full stack blogging application. Your backend is mostly complete for this task, but you may need to update some routes and add some routes to work with the provided frontend application. By the end of this assignment, you'll have a fully functional bloggin platform that users may create a accounts on, log in, create blog posts, and comment on posts. This homework will give you experience working with full stack development, connecting a frontend to a backend, and working with cookies for authentication. 
+                    This homework is a continuation of <Link className="link" href="/hw/hw6">Homework 6</Link>. In this assignment, you'll be taking your backend and connecting it to a provided frontend to create a full stack blogging application. Your backend is mostly complete for this task (from your work in HW6), but you may need to update some routes and add some routes to work with the provided frontend application. By the end of this assignment, you'll have a fully functional blogging platform that users may create a accounts on, log in, create blog posts, and comment on posts. This homework will give you experience working with full stack development, connecting a frontend to a backend, and working with cookies for authentication. 
                 </p>
                 <h3 className='text-lg sm:text-xl md:text-2xl font-bold mb-2'>Assignment Goals</h3>
                 <ul className="text-lg ml-6 list-disc">
@@ -81,7 +81,7 @@ export default function HW7() {
 
                 {/* Starter Code */}
                 <a
-                    // href={schedule[9].homework?.starter}
+                    href={schedule[9].homework?.starter}
                     className="flex justify-center items-center gap-1 px-4 py-2 bg-red-600 hover:bg-red-700 active:bg-red-800 text-white rounded-lg font-semibold shadow transition focus:outline-none focus:ring-2 focus:ring-red-300 w-1/2 my-4 cursor-pointer mx-auto"
                 >
                     Starter Code
@@ -127,12 +127,6 @@ export default function HW7() {
                     <p className='ml-4'>
                         The root directory contains a singular dependency, <span className='inline-code'>concurrently</span>, which allows you to run both the frontend and backend at the same time with a single command. This makes it much more convenient to work with a full stack application, as you can start both the frontend and backend with a single command. For development of this project, run <span className='inline-code'>npm run dev</span> from the root directory after installing all your dependencies, and this should start 2 localhosts to host your frontend and backend within the same terminal.
                     </p>
-                    <div className='red-block'>
-                        <h4 className='flex-center gap-2 text-2xl font-bold'>NOTE: Installation</h4>
-                        <p className='ml-4'>
-                            There is an incompatibility warning at the moment when you install the frontend of this application (tailwindcss/vite has not updated for Vite 8.0). You may install the frontend with the flag --force (<span className='inline-code'>npm install --force</span>). This should work properly and allow you to install the frontend dependencies, but you may see some warnings in your terminal about peer dependencies. This is a known issue with the current version of Vite and the tailwindcss/vite plugin, and should not cause any issues with the functionality of the application.
-                        </p>
-                    </div>
                 </section>
             </section>
 
@@ -162,7 +156,7 @@ export default function HW7() {
                         >{`app.use(cors({ origin: 'http://localhost:5173', credentials: true }));`}</SyntaxHighlighter>
                     </div>
                     <p className="ml-4">
-                        Once you've installed your backend and installed the dependencies for the frontend, run the command <span className='inline-code'>npm run dev</span> from the root directory to start both the frontend and backend concurrently. This should start two local servers, one for the frontend and one for the backend. The frontend should be hosted on <span className='inline-code'>localhost:5173</span> and the backend should be hosted on <span className='inline-code'>localhost:3000</span>. Check that you can access both the frontend and backend in your browser/postman, and that there are no errors in your terminal. If you run into any issues with this, make sure to check that your environment variables are set up correctly, and that your backend code is properly imported into the <span className='inline-code'>server</span> folder. 
+                        Once you've installed your backend and installed the dependencies for the frontend, run the command <span className='inline-code'>npm run dev</span> from the root directory to start both the frontend and backend concurrently. This should start two local servers, one for the frontend and one for the backend. The frontend should be hosted on <span className='inline-code'>localhost:5173</span> and the backend should be hosted on <span className='inline-code'>localhost:3000</span>. Check that you can access both the frontend and backend in your browser/Postman or curl, and that there are no errors in your terminal. If you run into any issues with this, make sure to check that your environment variables are set up correctly, and that your backend code is properly imported into the <span className='inline-code'>server</span> folder. 
                     </p>
                     <p className="ml-4">
                         If everything is properly installed, your frontend should look like the following picture, at the homepage of the application:
@@ -217,7 +211,7 @@ export default function HW7() {
                         Once your are satisfied with your login and registration functionality, implement the homepage TODOs. These TODOs will involve populating the homepage with the blogs available in the database. Each user can only have 1 blog, so this is also a representation of the users in the database. The current logged in user's blog should be displayed on top, while the rest of the blogs should be displayed below (excluding the current user). 
                     </p>
                     <p className='ml-4'>
-                        For this home page, you will need an extra route in your backend to get all the blogs in the database (Get /blogs or something like that). This route should query the database for all the blogs, and return them to the frontend to be displayed on the homepage. Make sure to test this route in postman and on the frontend to ensure that it works properly and displays the blogs as expected.
+                        For this home page, you will need an <span className='red-bold'>extra route</span> in your backend to get all the blogs in the database (Get /blogs or something like that). This route should query the database for all the blogs, and return them to the frontend to be displayed on the homepage. Make sure to test this route in postman and on the frontend to ensure that it works properly and displays the blogs as expected.
                     </p>
                 </section>
 
@@ -288,10 +282,10 @@ export default function HW7() {
                 <section className='space-y-4'>
                     <h3 className='text-lg sm:text-xl md:text-2xl font-bold mb-2 text-indigo-600'>Submission</h3>
                     <p className='ml-4'>
-                        Submit your code through Gradescope as a <span className='inline-code'>.zip</span> file that contains your project. Make sure your project includes all files you worked on during this homework and your <span className='inline-code'>README.md</span> file. Make sure the submitted file structure within your submission is <span className='red-bold'>exactly or similar</span> to the file structure you used to run and develop the project. Points will be taken off for malformed project structures in the final submission! Additionally, <span className='red-bold'>do not</span> include the <span className='inline-code'>.env</span> folder in your submission! We will be grading your project with our own database to test how your backend interacts with it, so there is no need to include your own environment variables in the submission.
+                        Submit your code through Gradescope as a <span className='inline-code'>.zip</span> file that contains your project. Make sure your project includes all files you worked on during this homework and your <span className='inline-code'>README.md</span> file. You should NOT include the <span className='inline-code'>node_modules</span> folder in the <span className='inline-code'>.zip</span> file (feel free to delete it before submission), as it is quite heavy and we will reinstall the dependencies for grading anyways. Make sure the submitted file structure within your submission is <span className='red-bold'>exactly or similar</span> to the file structure you used to run and develop the project. Points will be taken off for malformed project structures in the final submission!
                     </p>
                     <p className='ml-4'>
-                        Before you submit, make sure you lint your code for style errors using the command <span className='inline-code'>npm run lint</span>. You should run each of the linters for both the frontend and backend separately to check for any linting errors. 
+                        Before you submit, make sure you lint your code for style errors using the command <span className='inline-code'>npm run lint</span>. More details on style can be found in the <Link className='link' href={"/styleguide"}>style guide</Link>. We will take -1 points for every style error remaining in the submission for the submitted files. Since this project requires you to make your own ESLint, we will use your linting rules instead of the standard rules we would apply, so make sure you pass your own set of style rules!
                     </p>
                     <p className='ml-4'>
                         For this homework, we've provided a rubric file named <span className='inline-code'>RUBRIC.md</span> in the starter code. Make sure to read through it carefully and ensure that your submission meets all the requirements outlined in the rubric. This will help you maximize your score and ensure that you've covered all necessary aspects of the assignment.
