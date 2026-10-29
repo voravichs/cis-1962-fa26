@@ -140,8 +140,8 @@ const schedule = [
     id: 9,
     date: startDate.add({weeks: 9}),
     topic: "Deployment, Caching, and Web Security",
-    slides: "",
-    code: "",
+    slides: "/lectures/Lec9_1962_fa26.pdf",
+    code: "https://edstem.org/us/courses/102363/lessons/185749/slides/1098652",
     quiz: "https://edstem.org/us/courses/102363/lessons/185754/slides/1098667",
     due: "📝 HW6 DUE! (11/1)",
     homework:   { 
@@ -150,10 +150,8 @@ const schedule = [
       assigned: startDate.add({weeks: 9}),
       due: startDate.add({weeks: 10, days: 3}),
       durationWeeks: 1,
-      // detailsUrl: "/hw/hw7-blogp2",
-      // starter: "/hw-starter/hw7-blogp2-cis1962-fa26.zip",
-      detailsUrl: "",
-      starter: "",
+      detailsUrl: "/hw/hw7-blogp2",
+      starter: "/hw-starter/hw7-blogp2-cis1962-fa26.zip",
       icon: "📝"
     },
   },
@@ -163,6 +161,7 @@ const schedule = [
     topic: "Live Interaction: Websockets & Socket.io",
     slides: "",
     code: "",
+    quiz: "https://edstem.org/us/courses/102363/lessons/186275/slides/1102127",
     due: "📝 HW7 DUE! (11/8)",
     homework:   { 
       id: 'Final Project',
