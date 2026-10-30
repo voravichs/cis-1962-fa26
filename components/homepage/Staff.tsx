@@ -65,7 +65,8 @@ const Staff = () => {
                             dejah7@engineering.upenn.edu
                         </a>
                         <div>Office Hours: </div>
-                        <div>Levine 5th Floor Bump Space, Wednesdays 10 AM- 12 PM</div>
+                        <div>Levine 5th Floor Bump Space </div>
+                        <div>on Wednesdays 10 AM- 12 PM</div>
                         <div className="text-sm text-gray-600 mt-1 fw p-6">
                             Hello! I'm a first-year master's student at Penn CIS with prior experience as a full-stack SWE at a fintech SaaS company. I like building sleek and innovative UI features for websites, and at other times I work on my Computer Vision research. I'm a dancer, writer, and most importantly, a huge socializer. So if it's not about homework, feel free to drop in for a chat about anything and nothing! Cheers to a great semester!
                         </div>
