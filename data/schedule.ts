@@ -169,8 +169,7 @@ const schedule = [
       assigned: startDate.add({weeks: 10}),
       due: startDate.add({weeks: 11}),
       durationWeeks: 1,
-      detailsUrl: "",
-      starter: "",
+      detailsUrl: "/hw/finalproject",
       icon: "🚧"
     },
   },
@@ -188,6 +187,7 @@ const schedule = [
     topic: "NextJS & The State of JavaScript",
     slides: "",
     code: "",
+    due: "🚧 Milestone 1 DUE!",
   },
   {
     id: "-",
@@ -202,6 +202,15 @@ const schedule = [
     topic: "Project Presentations",
     slides: "",
     code: "",
+    due: "🚧 Project Presentations DUE!",
+  },
+  {
+    id: "-",
+    date: startDate.add({weeks: 15}),
+    topic: "NO LECTURE",
+    slides: "",
+    code: "",
+    due: "🚧 FINAL PROJECT DUE!",
   },
 ];
 

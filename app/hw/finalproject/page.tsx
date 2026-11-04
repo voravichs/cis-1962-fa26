@@ -4,6 +4,7 @@ import { MdGrade, MdCoPresent } from "react-icons/md";
 
 import type { Metadata } from "next";
 import { VscDebugStart } from 'react-icons/vsc';
+import XLink from '@/components/XLink';
 
 const SECTIONS = [
   {
@@ -34,7 +35,7 @@ const SECTIONS = [
 
 export const metadata: Metadata = {
   title: "Final Project | CIS 1962",
-  description: "Final Project Page of CIS 1962 for Spring 2026 at the University of Pennsylvania",
+  description: "Final Project Page of CIS 1962 for Fall 2026 at the University of Pennsylvania",
 };
 
 export default function FinalProject() {
@@ -46,10 +47,10 @@ export default function FinalProject() {
         <div className="mx-auto text-lg">
             {/* Title */}
             <h1 className='text-3xl sm:text-4xl md:text-5xl font-bold'>Final Project</h1>
-            <h3 className='text-lg sm:text-xl md:text-2xl opacity-60'>Proposal: Due April 5th</h3>
-            <h3 className='text-lg sm:text-xl md:text-2xl opacity-60'>Milestone: Due April 16th</h3>
-            <h3 className='text-lg sm:text-xl md:text-2xl opacity-60'>Presentations: Due April 23rd</h3>
-            <h3 className='text-lg sm:text-xl md:text-2xl opacity-60 mb-8'>Final Deadline: Due May 4th</h3>
+            <h3 className='text-lg sm:text-xl md:text-2xl opacity-80'>Proposal: Due November 12th</h3>
+            <h3 className='text-lg sm:text-xl md:text-2xl opacity-80'>Milestone: Due November 19th</h3>
+            <h3 className='text-lg sm:text-xl md:text-2xl opacity-80'>Presentations: Due December 3rd</h3>
+            <h3 className='text-lg sm:text-xl md:text-2xl opacity-80 mb-8'>Final Deadline: Due December 10th</h3>
 
             {/* Intro Text */}
             <section className="space-y-4 mb-8">
@@ -57,7 +58,7 @@ export default function FinalProject() {
                     Your final project for CIS 1962 will be a culmination of all that you learned within this course. This will be an full-stack open-ended project that must include a front-end and back-end component with deployment at the end, but otherwise is an opportunity to apply what you learned in a creative way to make something cool! You can use what you've learned in this class, or do a deep dive into new technologies, frameworks, or libraries to create something truly unique. 
                 </p>
                 <p className="ml-4">
-                    There are a few deadlines to keep track track of: a proposal will be due a week after this final project is announced, on April 2nd. A short milestone check-in will be due April 16th to check in on your progress towards completing the final project. Then, we will present your projects in class during our final scheduled class on April 23rd. Your final submission will be due on May 4th (a day after reading days). <span className='red-bold'>All submissions will be done through Canvas assignments, either as text documents or a link to your final GitHub repo. </span>
+                    There are a few deadlines to keep track track of: a proposal will be due a week after this final project is announced, on November 12th. A short milestone check-in will be due November 19th to check in on your progress towards completing the final project. Then, we will present your projects in class during our final scheduled class on December 3rd. Your final submission will be due on December 10th (after reading days). <span className='red-bold'>All submissions will be done through Canvas assignments, either as text documents or a link to your final GitHub repo. </span>
                 </p>
                 <p className="ml-4">
                     This project is intended to be done <span className='red-bold'>solo</span> or as a <span className='red-bold'>pair</span>. You will indicate this to us during your project proposals. Feel free to use Ed Discussion to find a group member if you desire for your project ideas. You will be submitting your final project as a GitHub repo, so make sure you familiarize yourself with GitHub collaboration techniques like pull requests, code reviews, and branches if you intend to work in a group. <span className='red-bold'>Only 1 student of a pair has to submit for the group for all assignments.</span>
@@ -76,7 +77,7 @@ export default function FinalProject() {
                 <ul className="text-lg ml-12 list-disc">
                     <li>Are you working solo or as a pair? If you are working as a pair, who are the group members?</li>
                     <li>Write a pitch for your final project. This should include a clear description of the project's goals and what it will provide for users.</li>
-                    <li>Describe the tech stack for this project, including the main frontend and backend technologies you will use, and what your plan for deploying the app will be.</li>
+                    <li>Describe the tech stack for this project, including the main frontend and backend technologies you will use, and what your plan for deploying the app will be. Be sure to include what frontend UI libraries or frameworks you will be using.</li>
                     <li>Include your goals for what you would like to be done with before the scheduled milestone check-in. For this milestone, you should consider prioritizing the back-end functionality first before the front-end, but it is up to you to pace yourself and hold yourself to your own scheduled goals.</li>
                     <li>If you intend to use unique, new technologies we will not discuss in this course (see Extra Credit section), include them within your proposal so that we can verify whether or not it will count for extra credit!</li>
                 </ul>  
@@ -105,7 +106,7 @@ export default function FinalProject() {
             <section id="presentation" className="scroll-mt-48 space-y-4 mb-8">
                 <h2 className="text-2xl sm:text-3xl md:text-4xl text-indigo-600 font-bold mb-2 flex gap-2"><MdCoPresent />Presentation</h2>
                 <p className="ml-4">
-                    During our last scheduled class on April 23rd, you will be expected to present your final project to the class. This presentation should be around 10 minutes long and should include a demo of your project, an overview of the technologies you used, and a reflection on the development process. This is a chance to show off your hard work and creativity, and to share your project with your classmates. More details about the presentation format and expectations will be provided as we get closer to the date, including where to submit the slides for your presentation. You are expected to present in person during class, but if you have an excused absence for that day, please reach out to us and we can work something out for you to present remotely or submit a recorded presentation for the instructor.
+                    During our last scheduled class on December 3rd, you will be <span className="red-bold">required</span> to present your final project to the class. This presentation should be around 10-15 minutes long and should include a demo of your project, an overview of the technologies you used, and a reflection on the development process. This is a chance to show off your hard work and creativity, and to share your project with your classmates. More details about the presentation format and expectations will be provided as we get closer to the date, including where to submit the slides for your presentation. You are expected to present in person during class, but if you need an excused absence for that day, please reach out to us and we can work something out for you to present remotely or submit a recorded presentation for the instructor.
                 </p>
                 <p className="ml-4">
                     Since this presentation is before the final project submission, you are not expected to have a fully polished and completed project by the time of the presentation. However, you should have a working demo that you can show to the class, and you should be able to talk about your development process and the technologies you used in a thoughtful way. This is also a chance to get feedback from your classmates and instructors on your project before the final submission, so we encourage you to be open to constructive criticism and suggestions during your presentation!
@@ -116,14 +117,14 @@ export default function FinalProject() {
             <section id="extra" className="scroll-mt-48 space-y-4 mb-8">
                 <h2 className="text-2xl sm:text-3xl md:text-4xl text-indigo-600 font-bold mb-2 flex gap-2"><FaGrinStars />Extra Credit</h2>
                 <p className="ml-4">
-                    You can gain up to 30% extra credit on this final project, usable for the grade of this project or applied to lost points in previous homework grades. We will award 10% extra credit for each unique, new techonology you use that is not covered in this course. These technologies should be substantial libraries or frameworks that add significant functionality to the app. For instance, a small library like <span className='inline-code'>react-hot-toast</span> won't be applicable.
+                    You can gain up to 30% extra credit on this final project, usable for the grade of this project or applied to lost points in previous homework grades. We will award 10% extra credit for each unique, distinct technology you use that is not covered in this course. These technologies should be substantial libraries or frameworks that add significant functionality to the app. For instance, a small library like <span className='inline-code'>react-hot-toast</span> won't be applicable. Some of these technologies may have been covered briefly in this course, so you must use them in a way that is distinct from how we used them in class. (For instance, if you use <span className='inline-code'>socket.io</span> for a real-time multiplayer game, that would be distinct from how we used it in class for a chat application. )
                 </p>
                 <p className="ml-4">
                     Some ideas for technologies include:
                 </p>
                 <ul className="text-lg ml-12 list-disc">
                     <li><a href='https://threejs.org/' target="_blank" rel="noopener noreferrer" className="text-blue-700 underline">Three.js</a> for 3D</li>
-                    <li><a href='https://motion.dev/' target="_blank" rel="noopener noreferrer" className="text-blue-700 underline">Framer Motion</a> or <a href='https://www.react-spring.dev/' target="_blank" rel="noopener noreferrer" className="text-blue-700 underline">React Spring</a> for animations</li>
+                    <li><a href='https://motion.dev/' target="_blank" rel="noopener noreferrer" className="text-blue-700 underline">Motion</a> or <a href='https://www.react-spring.dev/' target="_blank" rel="noopener noreferrer" className="text-blue-700 underline">React Spring</a> for animations</li>
                     <li><a href='https://github.com/jaredhanson/passport' target="_blank" rel="noopener noreferrer" className="text-blue-700 underline">Passport.js</a> for validation</li>
                     <li><a href='https://www.prisma.io/' target="_blank" rel="noopener noreferrer" className="text-blue-700 underline">Prisma</a> or <a href='https://orm.drizzle.team/' target="_blank" rel="noopener noreferrer" className="text-blue-700 underline">Drizzle</a> for database interactions</li>
                     <li><a href='https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API' target="_blank" rel="noopener noreferrer" className="text-blue-700 underline">WebSockets</a> or <a href='https://socket.io/' target="_blank" rel="noopener noreferrer" className="text-blue-700 underline">Socket.io</a> for real time communication/live data/multiplayer</li>
@@ -173,7 +174,7 @@ export default function FinalProject() {
                             <h4 className='font-bold'><b>[3 pts]</b> Full-Stack & Deployment</h4>
                             <ul className="text-lg mb-4 ml-6 list-disc text-gray-900">
                                 <li>Frontend and backend connect seamlessly without bugs</li>
-                                <li>App is deployed to a production environment at an accessible URL</li>
+                                <li>The full stack is deployed to production environment at an accessible URL (frontend/backend may be deployed separately)</li>
                                 <li>Users are able to interact with the app at the deployed URL for the intended functionality of the app without encountering errors or issues</li>
                             </ul>  
                         </div>
@@ -183,10 +184,10 @@ export default function FinalProject() {
                         <div className="mb-2">
                             <h4 className='font-bold'><b>[4 pts]</b> Project Goals + Submission</h4>
                             <ul className="text-lg mb-4 ml-6 list-decimal text-gray-900">
-                                <li>Submitted Proposal by April 2nd</li>
-                                <li>Submitted milestone by April 16th</li>
-                                <li>Presented a final project during class on April 23rd</li>
-                                <li>Submitted the final project code by April 29th</li>
+                                <li>Submitted Proposal by November 12th</li>
+                                <li>Submitted milestone by November 19th</li>
+                                <li>Presented a final project during class on December 3rd</li>
+                                <li>Submitted the final project code by December 10th</li>
                             </ul>  
                         </div>
                     </div>
@@ -195,10 +196,10 @@ export default function FinalProject() {
 
             {/* Submission */}
             <section id="suggestions" className="scroll-mt-48 space-y-8 mb-8">
-                <h2 className="text-2xl sm:text-3xl md:text-4xl text-indigo-600 font-bold mb-4 flex gap-2"> <FaPlug />Suggestions</h2>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl text-indigo-600 font-bold mb-4 flex gap-2"> <FaPlug />Past Proposals </h2>
 
                 <p className="ml-4">
-                    This is a selection of approved proposals and various project ideas to help inspire you for your final project! These are truncated versions of proposals, so please use these as a reference but go into more detail in your own proposals so we can understand your project and give you feedback on it. These examples have a milestone 2, but you can consider the project presentation date as the milestone 2 for your own project and set your goals accordingly.
+                    This is a selection of approved proposals from past semesters to help inspire you for your final project! These are truncated versions of proposals, so please use these as a reference but go into more detail in your own proposals so we can understand your project and give you feedback on it. These examples have a milestone 2, but you can consider the project presentation date as the milestone 2 for your own project and set your goals accordingly.
                 </p>
 
                 {/* Examples */}
@@ -247,7 +248,7 @@ export default function FinalProject() {
                             </ul>
                         </div>
                         <div className="rounded-xl bg-white shadow-md p-8 flex flex-col gap-4">
-                            <h4 className="text-2xl font-semibold text-gray-700">VidToScore</h4>
+                            <h4 className="text-2xl font-semibold text-gray-700 text-center">VidToScore</h4>
                             <p>A web application that extracts musical scores or sheet music from video content and converts them into a downloadable PDF format. Includes Youtube video URL input and preview, a video editor interface, frame extraction, and PDF generation/download functionality.</p>
                             <p><b>Tech Stack:</b> React, Python/Flask</p>
                             <ul className='list-disc ml-4'>
@@ -257,6 +258,21 @@ export default function FinalProject() {
                             <p><b>New tech:</b></p>
                             <ul className='list-disc ml-4'>
                                 <li> Flask Backend (+10% extra credit) </li>
+                            </ul>
+                        </div>
+                        <div className="rounded-xl bg-white shadow-md p-8 flex flex-col gap-4">
+                            <h4 className="text-2xl font-semibold text-gray-700 text-center"><XLink link="https://client-gamma-snowy.vercel.app/" text="Orbit" /></h4>
+                            <p>A website that lets users input their location and see a 3D rendering of the night sky, while being able to add friends and learn about astrology. Uses socket.io to build mappings between users to track what people viewing in real time. Additionally, shows new and coming information relevant to users given their location and time, such as planets and meteor showers.</p>
+                            <p><b>Tech Stack:</b> React, Three.js, ExpressJS, MongoDB, Socket.io </p>
+                            <p><b>Deployment</b> Frontend: Vercel, Backend: Render, MongoDB hosted on MongoDB Atlas </p>
+                            <ul className='list-disc ml-4'>
+                                <li> Milestone 1: Backend API, MongoDB schemas, socket.io server, three.js star rendering, and basic frontend shell</li>
+                                <li> Milestone 2: Full UI and social features </li>
+                            </ul>
+                            <p><b>New tech:</b></p>
+                            <ul className='list-disc ml-4'>
+                                <li> Three.js for 3D rendering of celestial sphere (+10% extra credit) </li>
+                                <li> Socket.io for real time friend presence (+10% extra credit) </li>
                             </ul>
                         </div>
                     </div>  
