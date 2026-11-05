@@ -159,8 +159,8 @@ const schedule = [
     id: 10,
     date: startDate.add({weeks: 10}),
     topic: "Live Interaction: Websockets & Socket.io",
-    slides: "",
-    code: "",
+    slides: "/lectures/Lec10_1962_fa26.pdf",
+    code: "https://edstem.org/us/courses/102363/lessons/185750/slides/1105569",
     quiz: "https://edstem.org/us/courses/102363/lessons/186275/slides/1102127",
     due: "📝 HW7 DUE! (11/8)",
     homework:   { 
@@ -179,6 +179,7 @@ const schedule = [
     topic: "Monitoring, Accessibility, PWAs, and Mobile Applications",
     slides: "",
     code: "",
+    quiz: "https://edstem.org/us/courses/102363/lessons/186743/slides/1105568",
     due: "🚧 Project Proposal DUE!",
   },
   {
