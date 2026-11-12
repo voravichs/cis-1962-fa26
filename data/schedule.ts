@@ -176,18 +176,19 @@ const schedule = [
   {
     id: 11,
     date: startDate.add({weeks: 11}),
-    topic: "Monitoring, Accessibility, PWAs, and Mobile Applications",
-    slides: "",
-    code: "",
+    topic: "Server-side Rendering & Next.js",
+    slides: "/lectures/Lec11_1962_fa26.pdf",
+    code: "https://edstem.org/us/courses/102363/lessons/185751/slides/1098662",
     quiz: "https://edstem.org/us/courses/102363/lessons/186743/slides/1105568",
     due: "🚧 Project Proposal DUE!",
   },
   {
     id: 12,
     date: startDate.add({weeks: 12}),
-    topic: "NextJS & The State of JavaScript",
+    topic: "Accessibility, Mobile, & The State of JavaScript",
     slides: "",
     code: "",
+    quiz: "https://edstem.org/us/courses/102363/lessons/187243/slides/1109554",
     due: "🚧 Milestone 1 DUE!",
   },
   {
